@@ -4,7 +4,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#about, #skills {
+#about, #skills, #project, #coding, #contact {
     scroll-margin-top: 150px;
 }
 
@@ -94,7 +94,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.home_text button:hover {
+.home_text button:hover, #coding img:hover, #contact img:hover {
     transition: all .1s ease-in-out 0s;
     transform: scale(1.05);
 }
@@ -103,12 +103,17 @@ nav ul li a:hover {
     background-color: rgba(30, 144, 255, 0.3);
     max-width: 70%;
     margin: 150px auto;
-    padding: 70px 70px 70px 70px;
+    padding: 50px 70px 70px 70px;
     border-radius: 70px;
     box-sizing: border-box;
 }
 
 #about h1 {
+    background-image: url(../Image/Decoration\ 2.png);
+    background-size: contain;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 35px;
     justify-self: center;
     font-size: 35px;
 }
@@ -157,9 +162,14 @@ nav ul li a:hover {
 }
 
 #skills h1 {
-    margin-bottom: 50px;
+    background-image: url(../Image/Decoration\ 2.png);
+    background-size: contain;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 35px;
+    justify-self: center;
     font-size: 35px;
-    text-align: center;
+    margin-bottom: 50px;
 }
 
 #skill_paragraph {
@@ -200,4 +210,127 @@ nav ul li a:hover {
 
 .skill_box p {
     text-align: center;
+}
+
+#project h1 {
+    background-image: url(../Image/Decoration\ 2.png);
+    background-size: contain;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 35px;
+    justify-self: center;
+    font-size: 35px;
+    margin: 150px auto 50px;
+}
+
+#project p, #coding p {
+    font-size: 23px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#project img {
+    padding: 50px;
+    display: block;
+    justify-self: center;
+    margin-bottom: 70px;
+}
+
+#coding h1 {
+    background-image: url(../Image/Decoration\ 2.png);
+    background-size: contain;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 35px;
+    justify-self: center;
+    font-size: 35px;
+    margin: 50px 0px;
+}
+
+#coding img {
+    padding: 20px;
+    height: 100px;
+    display: block;
+    justify-self: center;
+}
+
+footer {
+    padding: 30px;
+    font-size: 23px;
+    color: #F5F5F5;
+    background-color: #0a192f;
+}
+
+footer img {
+    height: 55px;
+    margin-right: 10px;
+}
+
+footer h5 {
+    text-align: center;
+}
+
+#contact h1 {
+    background-image: url(../Image/Decoration\ 2.png);
+    background-size: contain;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 35px;
+    justify-self: center;
+    font-size: 35px;
+    margin: 50px;
+}
+
+#contact p {
+    font-size: 23px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#coninfo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+#social h3 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+#form h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#form input, #form textarea {
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#form textarea {
+    height: 70px;
+}
+
+label {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    font-size: 23px;
+    color: #0a192f;
+    font-weight: 700;
+    cursor: pointer;
 }
